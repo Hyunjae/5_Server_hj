@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>3. JSTL</title>
 </head>
 <body>
     <h1>Servlet/JSP 내장 객체와 범위(scope)</h1>
@@ -51,7 +51,7 @@
             <%
                 pageContext.setAttribute("pageMsg", "페이지 범위 입니다.");
             
-            	/* pageContext.setAttribute("str", "page scope"); */
+            	pageContext.setAttribute("str", "page scope");
             %>
             
             page scope pageMsg : ${pageMsg}
@@ -73,6 +73,7 @@
 
     <h1>우선 순위 확인 : ${str}</h1>
     
+    <!-- 원하는 scope에서 꺼내오고 싶을 때 -->
     <h3>page의 str 값 : ${pageScope.str}</h3>
     <h3>request의 str 값 : ${requestScope.str}</h3>
     <h3>session의 str 값 : ${sessionScope.str}</h3>

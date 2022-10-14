@@ -46,7 +46,7 @@ public class ScopeServlet extends HttpServlet {
 		
 		// page -> JSP 작성
 		// request
-//		req.setAttribute("str", "request scope");
+		req.setAttribute("str", "request scope");
 		session.setAttribute("str", "session scope");
 		application.setAttribute("str", "application scope");
 		
