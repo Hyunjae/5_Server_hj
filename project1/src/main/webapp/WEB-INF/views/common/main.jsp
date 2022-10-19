@@ -10,7 +10,7 @@
     <title>수업용 프로젝트</title>
 
     <link rel="stylesheet" href="/resources/css/main-style.css">
-
+    <%-- fontawesome 사이트 아이콘 이용 --%>
     <script src="https://kit.fontawesome.com/f7459b8054.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -72,7 +72,7 @@
                 
                             <!-- 회원가입, 아이디/비밀번호 찾기 -->
                             <article id="signUp-find-area">
-                                <a href="#">회원가입</a>
+                                <a href="/member/signUp">회원가입</a>
                                 <span>|</span>
                                 <a href="#">ID/PW 찾기</a>
                             </article>
