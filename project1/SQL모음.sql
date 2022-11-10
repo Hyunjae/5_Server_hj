@@ -298,3 +298,7 @@ AND MEMBER_EMAIL = 'user01@kh.or.kr';
 
 DELETE FROM "MEMBER" WHERE MEMBER_NO =11;
 
+-- 탈퇴하지 않은 회원 중 이메일이 같은 사람의 수 조회
+SELECT COUNT(*) FROM "MEMBER"
+WHERE MEMBER_EMAIL = 'user01@kh.or.kr'
+AND MEMBER_DEL_FL = 'N';
